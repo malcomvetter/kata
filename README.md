@@ -6,12 +6,15 @@ These are single units of movement that should become second nature for the pene
 To perform the kata, have a training partner setup a lab environment using a variation discussed below and execute the sequence.
 
 ##Post-Exploitation
+
 ###Persistence
+
 1.	Establish in-memory persistence from a shell that opens in an ephemeral process which dies within 5 seconds. Practice variations include: Operating Systems (Windows, *nix, Mac) and context (userland vs privileged).
 2.	Establish on-disk persistence from a currently stable in-memory shell. Practice variations include: Operating System (Windows, *nix, Mac), context (userland vs privileged), and available writable directories (e.g. suppose the primary partition is full or unresponsive).
 3.	Establish a secondary communications channel (different from the currently executing shell on the target host). Practice Variations include: host role (Server vs. User endpoint/desktop), Operating System (Windows, *nix, Mac) and egress traffic filtering policies, for example: (let creativity be the limit) all outbound traffic permitted, TCP port 443 outbound without protocol validation, HTTPS full proxy decryption, etc.
 
 ###Lateral Movement
+
 4.	Move from Windows host A to Windows host B. Variations include protocol (RDP, SMB, WMI, etc.) and vulnerability exploitation (e.g. MS08-067, pass the hash).
 5.	Move from Windows host A to Linux host B. Variations include protocol (e.g. SSH, SMB, NFS, etc.)
 6.	Move from Linux host A to Windows host B. Variations include protocol (e.g. SMB/RPC, RDP) and vulnerability exploitation.
